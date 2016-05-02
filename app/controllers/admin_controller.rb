@@ -12,6 +12,12 @@ class AdminController < ApplicationController
     render :action => 'list'
   end
 
+
+  def mymethod
+    p "add some data........"
+  end
+
+
   def list
     @product_pages, @products = paginate :products, :per_page => 10
   end
